@@ -25,10 +25,10 @@ public class NetworkEncodingErrorDetectionSwingCustomized extends JFrame {
         getContentPane().setBackground(new Color(240, 248, 255)); // Alice Blue
 
         JPanel inputPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 20, 20));
-        inputPanel.setBackground(new Color(190, 255, 255)); // Light Cyan
+        inputPanel.setBackground(new Color(190, 255, 255));
         inputPanel.setBorder(new EmptyBorder(20, 20, 20, 20));
 
-        JLabel inputLabel = new JLabel("Input Bits:");
+        JLabel inputLabel = new JLabel("Input Bits: ");
         inputLabel.setFont(new Font("Arial", Font.BOLD, 14));
         inputPanel.add(inputLabel);
 
@@ -56,12 +56,12 @@ public class NetworkEncodingErrorDetectionSwingCustomized extends JFrame {
 
         encodingCheckBox = new JCheckBox("Perform Encoding");
         encodingCheckBox.setFont(new Font("Arial", Font.BOLD, 14));
-        encodingCheckBox.setBackground(new Color(192, 255, 255)); // Light Cyan
+        encodingCheckBox.setBackground(new Color(192, 255, 255));
         inputPanel.add(encodingCheckBox);
 
         errorDetectionCheckBox = new JCheckBox("Perform Error Detection");
         errorDetectionCheckBox.setFont(new Font("Arial", Font.BOLD, 14));
-        errorDetectionCheckBox.setBackground(new Color(190, 255, 255)); // Light Cyan
+        errorDetectionCheckBox.setBackground(new Color(190, 255, 255));
         inputPanel.add(errorDetectionCheckBox);
 
         processButton = new JButton("Process");
@@ -108,7 +108,7 @@ public class NetworkEncodingErrorDetectionSwingCustomized extends JFrame {
             } else {
                 outputTextArea.setForeground(Color.RED);
                 outputTextArea.append("Invalid input. Please enter only 0s and 1s.\n");
-                outputTextArea.setForeground(Color.BLACK); // Reset text color
+                outputTextArea.setForeground(Color.BLACK);
                 return;
             }
         }
